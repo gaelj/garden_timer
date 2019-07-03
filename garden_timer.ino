@@ -43,6 +43,9 @@ const int NB_OF_IDENTICAL_CONSECUTIVE_ILLUM_MEAS = 5000;    // How many consecut
 // LED brightness
 const byte BRIGHTNESS_DAY = 128;
 const byte BRIGHTNESS_NIGHT = 96;
+
+// Button configuration
+const uint8_t BUTTON_DEBOUNCE_TIME = 500; // ms
 // ************** USER CONFIGURATION - END **************
 
 // Pinout configuration
@@ -52,7 +55,6 @@ const byte relayPin2 = 6;      // 220V relay
 const byte buttonPin = 2;      // push button (interrupt input)
 const byte LED_PIN = 4;
 const byte NUM_LEDS = 1;
-const uint8_t BUTTON_DEBOUNCE_TIME = 500; // ms
 
 // RGB LED configuration
 #define LED_TYPE WS2811
