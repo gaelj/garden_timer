@@ -184,8 +184,8 @@ void setRelay()
         Serial.println("Relays OFF");
     else
         Serial.println("Relays ON");
-    digitalWrite(relayPin1, !currentTriggerType);
-    digitalWrite(relayPin2, !currentTriggerType);
+    digitalWrite(relayPin1, currentTriggerType == LOW ? HIGH : LOW);
+    digitalWrite(relayPin2, currentTriggerType == LOW ? HIGH : LOW);
     brightness = isDay ? BRIGHTNESS_DAY : BRIGHTNESS_NIGHT;
     FastLED.setBrightness(brightness);
 }
