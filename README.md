@@ -10,7 +10,7 @@ The pinout is provided in the configuration section of the sketch and can be ada
 - use an analog input for the sensor
 
 Further cabling instructions:
-- use a series 1k resistor between the digital ouptput pin and the RGB LED input
+- use a series 1k resistor between the digital output pin and the RGB LED input
 - connect the other pin of the switch to GND
 - connect +5V power and GND to the illumniation sensor module, the LED(s) and the relay board
 
