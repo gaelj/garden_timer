@@ -97,6 +97,9 @@ void setup()
     currentBlending = LINEARBLEND;
     FillLEDsFromPaletteColors(0);
     FastLED.show();
+
+    digitalWrite(relayPin1, HIGH);
+    digitalWrite(relayPin2, HIGH);
 }
 
 /**
