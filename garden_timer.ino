@@ -31,8 +31,8 @@ const unsigned long HOUR = 60 * MINUTE;
 
 // ************** USER CONFIGURATION - START **************
 // Timer configuration
-const unsigned long ON_DURATION = 2 * SECOND;
-const unsigned long OFF_DURATION = 10 * SECOND;
+const unsigned long ON_DURATION = 5 * SECOND;
+const unsigned long OFF_DURATION = 1 * HOUR - ON_DURATION;
 
 // Illumination sensor value and time hysteresis configuration
 // The more light there is, the lower the sensor value
